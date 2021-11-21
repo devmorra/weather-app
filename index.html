@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Wow weather very cool"/>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+    <link rel="manifest" href="static/site.webmanifest">
+    <!-- main script -->
+    <script src="js/main.js" defer></script>
+    
+    <title>Weather</title>
+    
+</head>
+<body>
+    <div class="container">
+        <form name="weatherData" id="weatherDataForm">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" value="Boston"></input>
+            <button type="submit" id="submitButton">Get Weather</button>
+        </form>
+        <div class="mainWeatherContainer">
+            <div class="primaryWeather">
+                <img id="weatherIcon">
+                <div id="weatherType"></div>
+                <div id="temp"></div>
+            </div>
+            
+            <div class="weatherDetails">
+                <ul class="list-group list-group-flush" >
+                    <li class="list-group-item">
+                        <div id="lowTemp"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div id="highTemp"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div id="humidity"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div id="pressure"></div>
+                    </li>
+                    
+                </ul>
+                <div class="windDetails">
+                    <ul class="list-group list-group-flush" ></ul>
+                    <li class="list-group-item">
+                        <div id="windSpeed"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div id="windDirection"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div id="windGust"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
