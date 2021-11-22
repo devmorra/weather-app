@@ -23,52 +23,32 @@
 <body>
     <div class="container">
         <form name="weatherData" id="weatherDataForm">
-            <label for="city">City</label>
-            <input type="text" name="city" id="city" value="Boston"></input>
-            <button type="submit" id="submitButton">Get Weather</button>
+            <input type="text" name="city" id="city" placeholder="Enter City Name"></input>
+            <button type="submit" id="submitButton" class="btn btn-primary">Get Weather</button>
         </form>
         <div class="mainWeatherContainer">
             <div class="primaryWeather">
                 <img id="weatherIcon">
                 <div id="weatherType"></div>
                 <div id="temp"></div>
+                <div id="highLowTemp"></div>
+                <div id="humidity"></div>
+
             </div>
             
             <div class="weatherDetails">
-                <ul class="list-group list-group-flush" >
-                    <li class="list-group-item">
-                        <div id="lowTemp"></div>
-                    </li>
-                    <li class="list-group-item">
-                        <div id="highTemp"></div>
-                    </li>
-                    <li class="list-group-item">
-                        <div id="humidity"></div>
-                    </li>
-                    <li class="list-group-item">
-                        <div id="pressure"></div>
-                    </li>
-                    
-                </ul>
-                <div class="windDetails">
-                    <ul class="list-group list-group-flush" ></ul>
-                    <li class="list-group-item">
-                        <div id="windSpeed"></div>
-                    </li>
-                    <li class="list-group-item">
-                        <div id="windDirection"></div>
-                    </li>
-                    <li class="list-group-item">
-                        <div id="windGust"></div>
-                    </li>
-                </ul>
+                <img id="windIcon" src="static/wind.png"></img>
+                <br>
+                <div class="windDetails">                    
+                    <div id="wind"></div>              
+                </div>
+
             </div>
         </div>
+        
     </div>
     
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
 </html>
